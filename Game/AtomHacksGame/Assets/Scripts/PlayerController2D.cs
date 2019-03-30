@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController2D : MonoBehaviour {
 
@@ -81,5 +82,20 @@ public class PlayerController2D : MonoBehaviour {
             transform.localScale = theScale;
         }
     }
-
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("enemy"))
+        {
+            collision.GetComponent<Animator>().Play("SnakeDie");
+            collision.GetComponent<EnemyMove>().speed = 0;
+            //collision.GetComponent<SpriteRenderer>().sortingOrder = 1;
+            //if (collision.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("SnakeDie"))
+            collision.transform.gameObject.SetActive(false);
+            //Destroy(collision);
+        }
+        if (collision.gameObject.CompareTag("winning"))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
+    }
 }
