@@ -246,7 +246,7 @@ MonoBehaviour:
   groundCheckR: {fileID: 819744763}
   groundCheckL: {fileID: 102030477}
   runSpeed: 7
-  jumpSpeed: 11
+  jumpSpeed: 13
 --- !u!1001 &586909049
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -628,7 +628,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 1.4370651, y: -18.51608}
+  m_Offset: {x: 1.4370651, y: -17.839367}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -639,7 +639,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 128.37807, y: 6.107807}
+  m_Size: {x: 128.37807, y: 7.461235}
   m_EdgeRadius: 0
 --- !u!4 &1301114244
 Transform:
@@ -805,6 +805,21 @@ PrefabInstance:
         type: 3}
       propertyPath: runSpeed
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 61774135131187318, guid: ed82f032d3c369c4ca0b9b1ed2220ece,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 0.03388606
+      objectReference: {fileID: 0}
+    - target: {fileID: 61774135131187318, guid: ed82f032d3c369c4ca0b9b1ed2220ece,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.17490363
+      objectReference: {fileID: 0}
+    - target: {fileID: 61774135131187318, guid: ed82f032d3c369c4ca0b9b1ed2220ece,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 70158118426391068, guid: ed82f032d3c369c4ca0b9b1ed2220ece,
         type: 3}
